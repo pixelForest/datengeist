@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
 var status = 'pause';
 
-var loadingSound = new Audio('audio/loading.mp3');
+var loadingSound = new Audio('/audio/loading.mp3');
 
-loadingSound.play(); 
+loadingSound.play();
 loadingSound.loop = true;
 status = 'play';
 
-function fadeOut(p_audio){  
+function fadeOut(p_audio){
     if(status != 'play') return false;
 
     var actualVolume = p_audio.volume;
