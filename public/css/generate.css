@@ -1,0 +1,66 @@
+/* FONT DECLARATIONS */
+
+@font-face {
+	font-family: 'SFMono-Light';
+	src: url('../fonts/SFMono-Light.otf') 
+		 format('opentype');
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #111111;
+  font: normal 16px/1.38 SFMono-Light;
+  color: rgb(198, 198, 198);
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-image: url('../images/hex-node.svg');
+  background-size: 250px 250px;
+  background-position: center center;
+}
+
+.loader {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.loader_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  width: 200px;
+  height: 240px;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.text {
+  margin: 20px auto 0;
+  text-align: center;
+  letter-spacing: 3px;
+  color: rgb(198, 198, 198);
+}
